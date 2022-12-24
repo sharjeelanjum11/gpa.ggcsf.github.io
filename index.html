@@ -1,0 +1,3000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator GPA</title>
+
+</head>
+<body>
+    <div class="wraper"></div>
+ <div class="candy">
+        
+    
+    <img src="logo.png" alt="logo" srcset="">
+    <h3>GOVT.GRADUATE COLLEGE SAMANABAD FAISALABAD</h3>
+    <h4>GPA CALCULATOR</h4>
+    <H5>(For BS Program)</H5>
+
+<table>
+    <tr>
+<th>Sr. No</th>
+<th>MARKS</th>
+<th>Select 
+    Credit hour</th>
+<th>Quality Points</th>
+<th>Grade</th>
+</tr>
+<tr>
+    <td>1.</td>
+    <td><input type="text" id="fir" ></td>
+    <td>  <select id="cno1">
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        
+      </select></td>
+      <td><input type="text" id="qpbox1" disabled></td>
+      <td><p id="g1"></p></td>
+</tr>
+<tr>
+    <td>2.</td>
+    <td><input type="text" id="seco"></td>
+    <td>  <select id="cno2">
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        
+      </select></td>
+      <td><input type="text" id="qpbox2" disabled></td>
+      <td><p id="g2"></p></td>
+</tr>
+<tr>
+    <td>3.</td>
+    <td><input type="text" id="thir"></td>
+    <td>  <select id="cno3">
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        
+      </select></td>
+      <td><input type="text" id="qpbox3" disabled></td>
+      <td><p id="g3"></p></td>
+</tr>
+<tr>
+    <td>4.</td>
+    <td><input type="text" id="forth"></td>
+    <td>  <select id="cno4">
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+       
+      </select></td>
+      <td><input type="text" id="qpbox4" disabled></td>
+      <td><p id="g4"></p></td>
+</tr>
+<tr>
+    <td>5.</td>
+    <td><input type="text" id="fifth"></td>
+    <td>  <select id="cno5">
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      
+      </select></td>
+      <td><input type="text" id="qpbox5" disabled></td>
+      <td><p id="g5"></p></td>
+</tr>
+<tr>
+    <td>6.</td>
+    <td><input type="text" id="six"></td>
+    <td>  <select id="cno6">
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      
+      </select></td>
+      <td><input type="text" id="qpbox6" disabled></td>
+      <td><p id="g6"></p></td>
+</tr>
+<tr>
+    <td>Total</td>
+    <td><p id="mrks"></p></td>
+    <td><p id="tch"</p></td>
+    <td><p id="gpa"></p></td>
+</tr>
+
+
+</table>
+
+
+    
+  
+
+
+    
+    
+       <!-- <p id="demo">Click me.</p> -->
+      <button id="btn" onclick="myfunction()">Get GPA</button>
+ </div>
+</div>
+    
+    <script>
+        
+
+    // var num = document.getElementById("mrks").value
+
+
+    function myfunction(){
+        var first_number = parseFloat(document.getElementById("fir").value);
+        
+        var seco=parseFloat(document.getElementById("seco").value);
+        var thir=parseFloat(document.getElementById("thir").value);
+        var forth=parseFloat(document.getElementById("forth").value);
+        var fifth=parseFloat(document.getElementById("fifth").value);
+        var six=parseFloat(document.getElementById("six").value);
+        var cno1=parseFloat(document.getElementById("cno1").value);
+        var cno2= parseFloat(document.getElementById("cno2").value);
+        var cno3= parseFloat(document.getElementById("cno3").value);
+        var cno4= parseFloat(document.getElementById("cno4").value);
+        var cno5= parseFloat(document.getElementById("cno5").value);
+        var cno6= parseFloat(document.getElementById("cno6").value);
+        
+        // var second_number = parseFloat(document.getElementById("seco").value);
+            // var result = first_number + second_number;
+if(cno1==3){
+            if(first_number>=48){
+                let qp = 12.0;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="A";
+            }
+            else if(first_number==47){
+                let qp = 11.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B";
+            }
+            else if(first_number==46){
+                let qp = 11.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B";
+            }
+            else if(first_number==45){
+                let qp = 11.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2);
+        document.getElementById("g1").innerHTML="B"; 
+            }
+            else if(first_number==44){
+                let qp = 10.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B";
+            }
+            else if(first_number==43){
+                let qp = 10.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B";
+            }
+            else if(first_number==42){
+                let qp = 10.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B";
+            }
+            else if(first_number==41){
+                let qp = 9.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B";
+            }
+            else if(first_number==40){
+                let qp = 9.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B";
+            }
+            else if(first_number==39){
+                let qp = 9.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B";
+            }
+            else if(first_number==38){
+                let qp = 8.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C";
+            }
+            else if(first_number==37){
+                let qp = 8.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C";
+            }
+            else if(first_number==36){
+                let qp = 8.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C";
+            }
+            else if(first_number==35){
+                let qp = 7.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C";
+            }
+
+            else if(first_number==34){
+                let qp = 7.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C";
+            }
+
+            else if(first_number==33){
+                let qp = 7.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C";
+            }
+            else if(first_number==32){
+                let qp = 6.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C";
+            }
+            else if(first_number==31){
+                let qp = 6.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2);
+        document.getElementById("g1").innerHTML="C"; 
+            }
+            else if(first_number==30){
+                let qp = 6.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2);
+        document.getElementById("g1").innerHTML="C"; 
+            }
+            else if(first_number==29){
+                let qp = 5.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2);
+        document.getElementById("g1").innerHTML="D"
+            }
+            else if(first_number==28){
+                let qp = 5.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="D"
+            }
+            else if(first_number==27){
+                let qp = 4.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2);
+        document.getElementById("g1").innerHTML="D"
+            }
+            else if(first_number==26){
+                let qp = 4.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2);
+        document.getElementById("g1").innerHTML="D" 
+            }
+            else if(first_number==25){
+                let qp = 3.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="D"
+            }
+            else if(first_number==24){
+                let qp = 3.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="D"
+            }
+   
+        // console.log(first_number)
+        //     document.getElementById("demo").innerHTML = first_number; 
+    }
+   
+
+else if(cno1==4){
+
+    if(first_number>=64){
+                let qp = 16.0;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="A"
+            }
+            
+    else if(first_number==63){
+                let qp = 15.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B"
+            }
+            else if(first_number==62){
+                let qp = 15.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B"
+            }
+            else if(first_number==61){
+                let qp = 15.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B"
+            }
+            else if(first_number==60){
+                let qp = 14.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B"
+            }
+            else if(first_number==59){
+                let qp = 14.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B"
+            }
+            else if(first_number==58){
+                let qp = 14.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2);
+        document.getElementById("g1").innerHTML="B" 
+            }
+            else if(first_number==57){
+                let qp = 13.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B"
+            }
+            else if(first_number==56){
+                let qp = 13.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B"
+            }
+            else if(first_number==55){
+                let qp = 13.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B"
+            }
+            else if(first_number==54){
+                let qp = 12.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B"
+            }
+            else if(first_number==53){
+                let qp = 12.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B"
+            }
+            else if(first_number==52){
+                let qp = 12.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2);
+        document.getElementById("g1").innerHTML="B" 
+            }
+            else if(first_number==51){
+                let qp = 11.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C"
+            }
+            else if(first_number==50){
+                let qp = 11.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C"
+            }
+            else if(first_number==49){
+                let qp = 11.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C"
+            }
+            else if(first_number==48){
+                let qp = 10.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C"
+            }
+            else if(first_number==47){
+                let qp = 10.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C"
+            }
+            else if(first_number==46){
+                let qp = 10.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2);
+        document.getElementById("g1").innerHTML="C" 
+            }
+            else if(first_number==45){
+                let qp = 9.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C"
+            }
+            else if(first_number==44){
+                let qp = 9.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C"
+            }
+            else if(first_number==43){
+                let qp = 9.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C"
+            }
+            else if(first_number==42){
+                let qp = 8.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C"
+            }
+            else if(first_number==41){
+                let qp = 8.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C"
+            }
+            else if(first_number==40){
+                let qp = 8.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C"
+            }
+            else if(first_number==39){
+                let qp = 7.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="D"
+            }
+            else if(first_number==38){
+                let qp = 7.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="D"
+            }
+            else if(first_number==37){
+                let qp = 6.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="D"
+            }
+            else if(first_number==36){
+                let qp = 6.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="D"
+            }
+            else if(first_number==35){
+                let qp = 5.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="D"
+            }
+            else if(first_number==34){
+                let qp = 5.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="D"
+            }
+            else if(first_number==33){
+                let qp = 4.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="D"
+            }
+            else if(first_number==32){
+                let qp = 4.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="D"
+            }
+}
+else if(cno1==2){
+    if(first_number>=32){
+        let qp = 8.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="A"  
+    }
+    else if(first_number==31){
+        let qp = 7.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B"
+    }
+    else if(first_number==30){
+        let qp = 7.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B"
+    }
+    else if(first_number==29){
+        let qp = 7.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B"
+    }
+    else if(first_number==28){
+        let qp = 6.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B"
+    }
+    else if(first_number==27){
+        let qp = 6.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="B"
+    }
+    else if(first_number==26){
+        let qp = 6.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C"
+    }
+    else if(first_number==25){
+        let qp = 5.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C"
+    }
+    else if(first_number==24){
+        let qp = 5.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C"
+    }
+    else if(first_number==23){
+        let qp = 5.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C"
+    }
+    else if(first_number==22){
+        let qp = 4.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C"
+    }
+    else if(first_number==21){
+        let qp = 4.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C"
+    }
+    else if(first_number==20){
+        let qp = 4.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="C"
+    }
+    else if(first_number==19){
+        let qp = 3.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="D"
+    }
+    else if(first_number==18){
+        let qp = 3.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="D"
+    }
+    else if(first_number==17){
+        let qp = 2.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="D"
+    }
+    else if(first_number==16){
+        let qp = 2.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox1").value = qp.toFixed(2); 
+        document.getElementById("g1").innerHTML="D"
+    }
+
+}
+if(cno2==3){
+            if(seco>=48){
+                let qp = 12.0;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="A";
+            }
+            else if(seco==47){
+                let qp = 11.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="B";
+            }
+            else if(seco==46){
+                let qp = 11.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="B";
+            }
+            else if(seco==45){
+                let qp = 11.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2);
+        document.getElementById("g2").innerHTML="B"; 
+            }
+            else if(seco==44){
+                let qp = 10.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="B";
+            }
+            else if(seco==43){
+                let qp = 10.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="B";
+            }
+            else if(seco==42){
+                let qp = 10.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="B";
+            }
+            else if(seco==41){
+                let qp = 9.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="B";
+            }
+            else if(seco==40){
+                let qp = 9.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="B";
+            }
+            else if(seco==39){
+                let qp = 9.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="B";
+            }
+            else if(seco==38){
+                let qp = 8.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="C";
+            }
+            else if(seco==37){
+                let qp = 8.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="C";
+            }
+            else if(seco==36){
+                let qp = 8.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="C";
+            }
+            else if(seco==35){
+                let qp = 7.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="C";
+            }
+
+            else if(seco==34){
+                let qp = 7.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="C";
+            }
+
+            else if(seco==33){
+                let qp = 7.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="C";
+            }
+            else if(seco==32){
+                let qp = 6.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="C";
+            }
+            else if(seco==31){
+                let qp = 6.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2);
+        document.getElementById("g2").innerHTML="C"; 
+            }
+            else if(seco==30){
+                let qp = 6.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2);
+        document.getElementById("g2").innerHTML="C"; 
+            }
+            else if(seco==29){
+                let qp = 5.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2);
+        document.getElementById("g2").innerHTML="D"
+            }
+            else if(seco==28){
+                let qp = 5.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="D"
+            }
+            else if(seco==27){
+                let qp = 4.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2);
+        document.getElementById("g2").innerHTML="D"
+            }
+            else if(seco==26){
+                let qp = 4.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2);
+        document.getElementById("g2").innerHTML="D" 
+            }
+            else if(seco==25){
+                let qp = 3.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="D"
+            }
+            else if(seco==24){
+                let qp = 3.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="D"
+            }
+   
+        // console.log(seco)
+        //     document.getElementById("demo").innerHTML = seco; 
+    }
+else if(cno2==4){
+
+ if(seco>=64){
+            let qp = 16.0;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="A"
+        }
+        
+ else if(seco==63){
+            let qp = 15.67;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="B"
+        }
+        else if(seco==62){
+            let qp = 15.33;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="B"
+        }
+        else if(seco==61){
+            let qp = 15.00;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="B"
+        }
+        else if(seco==60){
+            let qp = 14.67;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="B"
+        }
+        else if(seco==59){
+            let qp = 14.33;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="B"
+        }
+        else if(seco==58){
+            let qp = 14.00;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2);
+    document.getElementById("g2").innerHTML="B" 
+        }
+        else if(seco==57){
+            let qp = 13.67;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="B"
+        }
+        else if(seco==56){
+            let qp = 13.33;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="B"
+        }
+        else if(seco==55){
+            let qp = 13.00;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="B"
+        }
+        else if(seco==54){
+            let qp = 12.67;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="B"
+        }
+        else if(seco==53){
+            let qp = 12.33;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="B"
+        }
+        else if(seco==52){
+            let qp = 12.00;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2);
+    document.getElementById("g2").innerHTML="B" 
+        }
+        else if(seco==51){
+            let qp = 11.67;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="C"
+        }
+        else if(seco==50){
+            let qp = 11.33;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="C"
+        }
+        else if(seco==49){
+            let qp = 11.00;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="C"
+        }
+        else if(seco==48){
+            let qp = 10.67;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="C"
+        }
+        else if(seco==47){
+            let qp = 10.33;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="C"
+        }
+        else if(seco==46){
+            let qp = 10.00;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2);
+    document.getElementById("g2").innerHTML="C" 
+        }
+        else if(seco==45){
+            let qp = 9.67;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="C"
+        }
+        else if(seco==44){
+            let qp = 9.33;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="C"
+        }
+        else if(seco==43){
+            let qp = 9.00;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="C"
+        }
+        else if(seco==42){
+            let qp = 8.67;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="C"
+        }
+        else if(seco==41){
+            let qp = 8.33;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="C"
+        }
+        else if(seco==40){
+            let qp = 8.00;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="C"
+        }
+        else if(seco==39){
+            let qp = 7.50;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="D"
+        }
+        else if(seco==38){
+            let qp = 7.00;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="D"
+        }
+        else if(seco==37){
+            let qp = 6.50;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="D"
+        }
+        else if(seco==36){
+            let qp = 6.00;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="D"
+        }
+        else if(seco==35){
+            let qp = 5.50;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="D"
+        }
+        else if(seco==34){
+            let qp = 5.00;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="D"
+        }
+        else if(seco==33){
+            let qp = 4.50;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="D"
+        }
+        else if(seco==32){
+            let qp = 4.00;
+    console.log(qp.toFixed(1));// "say Hello instead"
+    document.getElementById("qpbox2").value = qp.toFixed(2); 
+    document.getElementById("g2").innerHTML="D"
+        }
+}
+else if(cno2==2){
+    if(seco>=32){
+        let qp = 8.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="A"  
+    }
+    else if(seco==31){
+        let qp = 7.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="B"
+    }
+    else if(seco==30){
+        let qp = 7.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="B"
+    }
+    else if(seco==29){
+        let qp = 7.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="B"
+    }
+    else if(seco==28){
+        let qp = 6.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="B"
+    }
+    else if(seco==27){
+        let qp = 6.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="B"
+    }
+    else if(seco==26){
+        let qp = 6.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="C"
+    }
+    else if(seco==25){
+        let qp = 5.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="C"
+    }
+    else if(seco==24){
+        let qp = 5.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="C"
+    }
+    else if(seco==23){
+        let qp = 5.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="C"
+    }
+    else if(seco==22){
+        let qp = 4.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="C"
+    }
+    else if(seco==21){
+        let qp = 4.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="C"
+    }
+    else if(seco==20){
+        let qp = 4.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="C"
+    }
+    else if(seco==19){
+        let qp = 3.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="D"
+    }
+    else if(seco==18){
+        let qp = 3.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="D"
+    }
+    else if(seco==17){
+        let qp = 2.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="D"
+    }
+    else if(seco==16){
+        let qp = 2.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox2").value = qp.toFixed(2); 
+        document.getElementById("g2").innerHTML="D"
+    }
+
+}
+if(cno3==3){
+            if(thir>=48){
+                let qp = 12.0;
+        // console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="A";
+            }
+            else if(thir==47){
+                let qp = 11.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B";
+            }
+            else if(thir==46){
+                let qp = 11.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B";
+            }
+            else if(thir==45){
+                let qp = 11.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2);
+        document.getElementById("g3").innerHTML="B"; 
+            }
+            else if(thir==44){
+                let qp = 10.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B";
+            }
+            else if(thir==43){
+                let qp = 10.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B";
+            }
+            else if(thir==42){
+                let qp = 10.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B";
+            }
+            else if(thir==41){
+                let qp = 9.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B";
+            }
+            else if(thir==40){
+                let qp = 9.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B";
+            }
+            else if(thir==39){
+                let qp = 9.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B";
+            }
+            else if(thir==38){
+                let qp = 8.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C";
+            }
+            else if(thir==37){
+                let qp = 8.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C";
+            }
+            else if(thir==36){
+                let qp = 8.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C";
+            }
+            else if(thir==35){
+                let qp = 7.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C";
+            }
+
+            else if(thir==34){
+                let qp = 7.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C";
+            }
+
+            else if(thir==33){
+                let qp = 7.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C";
+            }
+            else if(thir==32){
+                let qp = 6.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C";
+            }
+            else if(thir==31){
+                let qp = 6.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2);
+        document.getElementById("g3").innerHTML="C"; 
+            }
+            else if(thir==30){
+                let qp = 6.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2);
+        document.getElementById("g3").innerHTML="C"; 
+            }
+            else if(thir==29){
+                let qp = 5.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2);
+        document.getElementById("g3").innerHTML="D"
+            }
+            else if(thir==28){
+                let qp = 5.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="D"
+            }
+            else if(thir==27){
+                let qp = 4.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2);
+        document.getElementById("g3").innerHTML="D"
+            }
+            else if(thir==26){
+                let qp = 4.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2);
+        document.getElementById("g3").innerHTML="D" 
+            }
+            else if(thir==25){
+                let qp = 3.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="D"
+            }
+            else if(thir==24){
+                let qp = 3.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="D"
+            }
+   
+        // console.log(thir)
+        //     document.getElementById("demo").innerHTML = thir; 
+    }
+   
+
+else if(cno3==4){
+
+    if(thir>=64){
+                let qp = 16.0;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="A"
+            }
+            
+    else if(thir==63){
+                let qp = 15.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B"
+            }
+            else if(thir==62){
+                let qp = 15.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B"
+            }
+            else if(thir==61){
+                let qp = 15.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B"
+            }
+            else if(thir==60){
+                let qp = 14.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B"
+            }
+            else if(thir==59){
+                let qp = 14.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B"
+            }
+            else if(thir==58){
+                let qp = 14.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2);
+        document.getElementById("g3").innerHTML="B" 
+            }
+            else if(thir==57){
+                let qp = 13.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B"
+            }
+            else if(thir==56){
+                let qp = 13.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B"
+            }
+            else if(thir==55){
+                let qp = 13.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B"
+            }
+            else if(thir==54){
+                let qp = 12.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B"
+            }
+            else if(thir==53){
+                let qp = 12.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B"
+            }
+            else if(thir==52){
+                let qp = 12.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2);
+        document.getElementById("g3").innerHTML="B" 
+            }
+            else if(thir==51){
+                let qp = 11.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C"
+            }
+            else if(thir==50){
+                let qp = 11.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C"
+            }
+            else if(thir==49){
+                let qp = 11.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C"
+            }
+            else if(thir==48){
+                let qp = 10.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C"
+            }
+            else if(thir==47){
+                let qp = 10.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C"
+            }
+            else if(thir==46){
+                let qp = 10.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2);
+        document.getElementById("g3").innerHTML="C" 
+            }
+            else if(thir==45){
+                let qp = 9.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C"
+            }
+            else if(thir==44){
+                let qp = 9.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C"
+            }
+            else if(thir==43){
+                let qp = 9.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C"
+            }
+            else if(thir==42){
+                let qp = 8.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C"
+            }
+            else if(thir==41){
+                let qp = 8.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C"
+            }
+            else if(thir==40){
+                let qp = 8.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C"
+            }
+            else if(thir==39){
+                let qp = 7.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="D"
+            }
+            else if(thir==38){
+                let qp = 7.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="D"
+            }
+            else if(thir==37){
+                let qp = 6.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="D"
+            }
+            else if(thir==36){
+                let qp = 6.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="D"
+            }
+            else if(thir==35){
+                let qp = 5.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="D"
+            }
+            else if(thir==34){
+                let qp = 5.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="D"
+            }
+            else if(thir==33){
+                let qp = 4.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="D"
+            }
+            else if(thir==32){
+                let qp = 4.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="D"
+            }
+}
+else if(cno3==2){
+    if(thir>=32){
+        let qp = 8.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="A"  
+    }
+    else if(thir==31){
+        let qp = 7.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B"
+    }
+    else if(thir==30){
+        let qp = 7.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B"
+    }
+    else if(thir==29){
+        let qp = 7.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B"
+    }
+    else if(thir==28){
+        let qp = 6.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B"
+    }
+    else if(thir==27){
+        let qp = 6.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="B"
+    }
+    else if(thir==26){
+        let qp = 6.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C"
+    }
+    else if(thir==25){
+        let qp = 5.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C"
+    }
+    else if(thir==24){
+        let qp = 5.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C"
+    }
+    else if(thir==23){
+        let qp = 5.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C"
+    }
+    else if(thir==22){
+        let qp = 4.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C"
+    }
+    else if(thir==21){
+        let qp = 4.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C"
+    }
+    else if(thir==20){
+        let qp = 4.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="C"
+    }
+    else if(thir==19){
+        let qp = 3.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="D"
+    }
+    else if(thir==18){
+        let qp = 3.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="D"
+    }
+    else if(thir==17){
+        let qp = 2.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="D"
+    }
+    else if(thir==16){
+        let qp = 2.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox3").value = qp.toFixed(2); 
+        document.getElementById("g3").innerHTML="D"
+    }
+
+}
+if(cno4==3){
+            if(forth>=48){
+                let qp = 12.0;
+        // console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="A";
+            }
+            else if(forth==47){
+                let qp = 11.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B";
+            }
+            else if(forth==46){
+                let qp = 11.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B";
+            }
+            else if(forth==45){
+                let qp = 11.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2);
+        document.getElementById("g4").innerHTML="B"; 
+            }
+            else if(forth==44){
+                let qp = 10.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B";
+            }
+            else if(forth==43){
+                let qp = 10.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B";
+            }
+            else if(forth==42){
+                let qp = 10.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B";
+            }
+            else if(forth==41){
+                let qp = 9.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B";
+            }
+            else if(forth==40){
+                let qp = 9.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B";
+            }
+            else if(forth==39){
+                let qp = 9.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B";
+            }
+            else if(forth==38){
+                let qp = 8.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C";
+            }
+            else if(forth==37){
+                let qp = 8.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C";
+            }
+            else if(forth==36){
+                let qp = 8.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C";
+            }
+            else if(forth==35){
+                let qp = 7.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C";
+            }
+
+            else if(forth==34){
+                let qp = 7.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C";
+            }
+
+            else if(forth==33){
+                let qp = 7.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C";
+            }
+            else if(forth==32){
+                let qp = 6.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C";
+            }
+            else if(forth==31){
+                let qp = 6.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2);
+        document.getElementById("g4").innerHTML="C"; 
+            }
+            else if(forth==30){
+                let qp = 6.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2);
+        document.getElementById("g4").innerHTML="C"; 
+            }
+            else if(forth==29){
+                let qp = 5.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2);
+        document.getElementById("g4").innerHTML="D"
+            }
+            else if(forth==28){
+                let qp = 5.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="D"
+            }
+            else if(forth==27){
+                let qp = 4.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2);
+        document.getElementById("g4").innerHTML="D"
+            }
+            else if(forth==26){
+                let qp = 4.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2);
+        document.getElementById("g4").innerHTML="D" 
+            }
+            else if(forth==25){
+                let qp = 3.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="D"
+            }
+            else if(forth==24){
+                let qp = 3.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="D"
+            }
+   
+        // console.log(forth)
+        //     document.getElementById("demo").innerHTML = forth; 
+    }
+   
+
+else if(cno4==4){
+
+    if(forth>=64){
+                let qp = 16.0;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="A"
+            }
+            
+    else if(forth==63){
+                let qp = 15.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B"
+            }
+            else if(forth==62){
+                let qp = 15.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B"
+            }
+            else if(forth==61){
+                let qp = 15.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B"
+            }
+            else if(forth==60){
+                let qp = 14.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B"
+            }
+            else if(forth==59){
+                let qp = 14.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B"
+            }
+            else if(forth==58){
+                let qp = 14.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2);
+        document.getElementById("g4").innerHTML="B" 
+            }
+            else if(forth==57){
+                let qp = 13.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B"
+            }
+            else if(forth==56){
+                let qp = 13.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B"
+            }
+            else if(forth==55){
+                let qp = 13.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B"
+            }
+            else if(forth==54){
+                let qp = 12.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B"
+            }
+            else if(forth==53){
+                let qp = 12.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B"
+            }
+            else if(forth==52){
+                let qp = 12.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2);
+        document.getElementById("g4").innerHTML="B" 
+            }
+            else if(forth==51){
+                let qp = 11.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C"
+            }
+            else if(forth==50){
+                let qp = 11.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C"
+            }
+            else if(forth==49){
+                let qp = 11.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C"
+            }
+            else if(forth==48){
+                let qp = 10.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C"
+            }
+            else if(forth==47){
+                let qp = 10.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C"
+            }
+            else if(forth==46){
+                let qp = 10.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2);
+        document.getElementById("g4").innerHTML="C" 
+            }
+            else if(forth==45){
+                let qp = 9.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C"
+            }
+            else if(forth==44){
+                let qp = 9.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C"
+            }
+            else if(forth==43){
+                let qp = 9.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C"
+            }
+            else if(forth==42){
+                let qp = 8.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C"
+            }
+            else if(forth==41){
+                let qp = 8.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C"
+            }
+            else if(forth==40){
+                let qp = 8.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C"
+            }
+            else if(forth==39){
+                let qp = 7.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="D"
+            }
+            else if(forth==38){
+                let qp = 7.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="D"
+            }
+            else if(forth==37){
+                let qp = 6.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="D"
+            }
+            else if(forth==36){
+                let qp = 6.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="D"
+            }
+            else if(forth==35){
+                let qp = 5.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="D"
+            }
+            else if(forth==34){
+                let qp = 5.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="D"
+            }
+            else if(forth==33){
+                let qp = 4.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="D"
+            }
+            else if(forth==32){
+                let qp = 4.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="D"
+            }
+}
+else if(cno4==2){
+    if(forth>=32){
+        let qp = 8.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="A"  
+    }
+    else if(forth==31){
+        let qp = 7.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B"
+    }
+    else if(forth==30){
+        let qp = 7.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B"
+    }
+    else if(forth==29){
+        let qp = 7.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B"
+    }
+    else if(forth==28){
+        let qp = 6.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B"
+    }
+    else if(forth==27){
+        let qp = 6.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="B"
+    }
+    else if(forth==26){
+        let qp = 6.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C"
+    }
+    else if(forth==25){
+        let qp = 5.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C"
+    }
+    else if(forth==24){
+        let qp = 5.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C"
+    }
+    else if(forth==23){
+        let qp = 5.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C"
+    }
+    else if(forth==22){
+        let qp = 4.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C"
+    }
+    else if(forth==21){
+        let qp = 4.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C"
+    }
+    else if(forth==20){
+        let qp = 4.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="C"
+    }
+    else if(forth==19){
+        let qp = 3.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="D"
+    }
+    else if(forth==18){
+        let qp = 3.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="D"
+    }
+    else if(forth==17){
+        let qp = 2.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="D"
+    }
+    else if(forth==16){
+        let qp = 2.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox4").value = qp.toFixed(2); 
+        document.getElementById("g4").innerHTML="D"
+    }
+
+}
+if(cno5==3){
+            if(fifth>=48){
+                let qp = 12.0;
+        // console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="A";
+            }
+            else if(fifth==47){
+                let qp = 11.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B";
+            }
+            else if(fifth==46){
+                let qp = 11.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B";
+            }
+            else if(fifth==45){
+                let qp = 11.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2);
+        document.getElementById("g5").innerHTML="B"; 
+            }
+            else if(fifth==44){
+                let qp = 10.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B";
+            }
+            else if(fifth==43){
+                let qp = 10.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B";
+            }
+            else if(fifth==42){
+                let qp = 10.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B";
+            }
+            else if(fifth==41){
+                let qp = 9.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B";
+            }
+            else if(fifth==40){
+                let qp = 9.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B";
+            }
+            else if(fifth==39){
+                let qp = 9.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B";
+            }
+            else if(fifth==38){
+                let qp = 8.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C";
+            }
+            else if(fifth==37){
+                let qp = 8.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C";
+            }
+            else if(fifth==36){
+                let qp = 8.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C";
+            }
+            else if(fifth==35){
+                let qp = 7.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C";
+            }
+
+            else if(fifth==34){
+                let qp = 7.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C";
+            }
+
+            else if(fifth==33){
+                let qp = 7.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C";
+            }
+            else if(fifth==32){
+                let qp = 6.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C";
+            }
+            else if(fifth==31){
+                let qp = 6.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2);
+        document.getElementById("g5").innerHTML="C"; 
+            }
+            else if(fifth==30){
+                let qp = 6.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2);
+        document.getElementById("g5").innerHTML="C"; 
+            }
+            else if(fifth==29){
+                let qp = 5.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2);
+        document.getElementById("g5").innerHTML="D"
+            }
+            else if(fifth==28){
+                let qp = 5.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="D"
+            }
+            else if(fifth==27){
+                let qp = 4.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2);
+        document.getElementById("g5").innerHTML="D"
+            }
+            else if(fifth==26){
+                let qp = 4.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2);
+        document.getElementById("g5").innerHTML="D" 
+            }
+            else if(fifth==25){
+                let qp = 3.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="D"
+            }
+            else if(fifth==24){
+                let qp = 3.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="D"
+            }
+   
+        // console.log(fifth)
+        //     document.getElementById("demo").innerHTML = fifth; 
+    }
+   
+
+else if(cno5==4){
+
+    if(fifth>=64){
+                let qp = 16.0;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="A"
+            }
+            
+    else if(fifth==63){
+                let qp = 15.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B"
+            }
+            else if(fifth==62){
+                let qp = 15.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B"
+            }
+            else if(fifth==61){
+                let qp = 15.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B"
+            }
+            else if(fifth==60){
+                let qp = 14.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B"
+            }
+            else if(fifth==59){
+                let qp = 14.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B"
+            }
+            else if(fifth==58){
+                let qp = 14.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2);
+        document.getElementById("g5").innerHTML="B" 
+            }
+            else if(fifth==57){
+                let qp = 13.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B"
+            }
+            else if(fifth==56){
+                let qp = 13.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B"
+            }
+            else if(fifth==55){
+                let qp = 13.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B"
+            }
+            else if(fifth==54){
+                let qp = 12.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B"
+            }
+            else if(fifth==53){
+                let qp = 12.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B"
+            }
+            else if(fifth==52){
+                let qp = 12.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2);
+        document.getElementById("g5").innerHTML="B" 
+            }
+            else if(fifth==51){
+                let qp = 11.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C"
+            }
+            else if(fifth==50){
+                let qp = 11.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C"
+            }
+            else if(fifth==49){
+                let qp = 11.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C"
+            }
+            else if(fifth==48){
+                let qp = 10.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C"
+            }
+            else if(fifth==47){
+                let qp = 10.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C"
+            }
+            else if(fifth==46){
+                let qp = 10.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2);
+        document.getElementById("g5").innerHTML="C" 
+            }
+            else if(fifth==45){
+                let qp = 9.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C"
+            }
+            else if(fifth==44){
+                let qp = 9.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C"
+            }
+            else if(fifth==43){
+                let qp = 9.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C"
+            }
+            else if(fifth==42){
+                let qp = 8.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C"
+            }
+            else if(fifth==41){
+                let qp = 8.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C"
+            }
+            else if(fifth==40){
+                let qp = 8.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C"
+            }
+            else if(fifth==39){
+                let qp = 7.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="D"
+            }
+            else if(fifth==38){
+                let qp = 7.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="D"
+            }
+            else if(fifth==37){
+                let qp = 6.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="D"
+            }
+            else if(fifth==36){
+                let qp = 6.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="D"
+            }
+            else if(fifth==35){
+                let qp = 5.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="D"
+            }
+            else if(fifth==34){
+                let qp = 5.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="D"
+            }
+            else if(fifth==33){
+                let qp = 4.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="D"
+            }
+            else if(fifth==32){
+                let qp = 4.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="D"
+            }
+}
+else if(cno5==2){
+    if(fifth>=32){
+        let qp = 8.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="A"  
+    }
+    else if(fifth==31){
+        let qp = 7.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B"
+    }
+    else if(fifth==30){
+        let qp = 7.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B"
+    }
+    else if(fifth==29){
+        let qp = 7.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B"
+    }
+    else if(fifth==28){
+        let qp = 6.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B"
+    }
+    else if(fifth==27){
+        let qp = 6.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="B"
+    }
+    else if(fifth==26){
+        let qp = 6.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C"
+    }
+    else if(fifth==25){
+        let qp = 5.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C"
+    }
+    else if(fifth==24){
+        let qp = 5.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C"
+    }
+    else if(fifth==23){
+        let qp = 5.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C"
+    }
+    else if(fifth==22){
+        let qp = 4.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C"
+    }
+    else if(fifth==21){
+        let qp = 4.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C"
+    }
+    else if(fifth==20){
+        let qp = 4.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="C"
+    }
+    else if(fifth==19){
+        let qp = 3.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="D"
+    }
+    else if(fifth==18){
+        let qp = 3.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="D"
+    }
+    else if(fifth==17){
+        let qp = 2.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="D"
+    }
+    else if(fifth==16){
+        let qp = 2.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox5").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="D"
+    }
+
+}
+
+if(cno6==3){
+            if(six>=48){
+                let qp = 12.0;
+        // console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g5").innerHTML="A";
+            }
+            else if(six==47){
+                let qp = 11.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B";
+            }
+            else if(six==46){
+                let qp = 11.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B";
+            }
+            else if(six==45){
+                let qp = 11.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2);
+        document.getElementById("g6").innerHTML="B"; 
+            }
+            else if(six==44){
+                let qp = 10.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B";
+            }
+            else if(six==43){
+                let qp = 10.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B";
+            }
+            else if(six==42){
+                let qp = 10.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B";
+            }
+            else if(six==41){
+                let qp = 9.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B";
+            }
+            else if(six==40){
+                let qp = 9.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B";
+            }
+            else if(six==39){
+                let qp = 9.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B";
+            }
+            else if(six==38){
+                let qp = 8.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C";
+            }
+            else if(six==37){
+                let qp = 8.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C";
+            }
+            else if(six==36){
+                let qp = 8.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C";
+            }
+            else if(six==35){
+                let qp = 7.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C";
+            }
+
+            else if(six==34){
+                let qp = 7.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C";
+            }
+
+            else if(six==33){
+                let qp = 7.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C";
+            }
+            else if(six==32){
+                let qp = 6.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C";
+            }
+            else if(six==31){
+                let qp = 6.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2);
+        document.getElementById("g6").innerHTML="C"; 
+            }
+            else if(six==30){
+                let qp = 6.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2);
+        document.getElementById("g6").innerHTML="C"; 
+            }
+            else if(six==29){
+                let qp = 5.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2);
+        document.getElementById("g6").innerHTML="D"
+            }
+            else if(six==28){
+                let qp = 5.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="D"
+            }
+            else if(six==27){
+                let qp = 4.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2);
+        document.getElementById("g6").innerHTML="D"
+            }
+            else if(six==26){
+                let qp = 4.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2);
+        document.getElementById("g6").innerHTML="D" 
+            }
+            else if(six==25){
+                let qp = 3.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="D"
+            }
+            else if(six==24){
+                let qp = 3.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="D"
+            }
+   
+        // console.log(six)
+        //     document.getElementById("demo").innerHTML = six; 
+    }
+   
+
+else if(cno6==4){
+
+    if(six>=64){
+                let qp = 16.0;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="A"
+            }
+            
+    else if(six==63){
+                let qp = 15.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B"
+            }
+            else if(six==62){
+                let qp = 15.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B"
+            }
+            else if(six==61){
+                let qp = 15.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B"
+            }
+            else if(six==60){
+                let qp = 14.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B"
+            }
+            else if(six==59){
+                let qp = 14.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B"
+            }
+            else if(six==58){
+                let qp = 14.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2);
+        document.getElementById("g6").innerHTML="B" 
+            }
+            else if(six==57){
+                let qp = 13.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B"
+            }
+            else if(six==56){
+                let qp = 13.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B"
+            }
+            else if(six==55){
+                let qp = 13.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B"
+            }
+            else if(six==54){
+                let qp = 12.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B"
+            }
+            else if(six==53){
+                let qp = 12.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B"
+            }
+            else if(six==52){
+                let qp = 12.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2);
+        document.getElementById("g6").innerHTML="B" 
+            }
+            else if(six==51){
+                let qp = 11.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C"
+            }
+            else if(six==50){
+                let qp = 11.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C"
+            }
+            else if(six==49){
+                let qp = 11.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C"
+            }
+            else if(six==48){
+                let qp = 10.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C"
+            }
+            else if(six==47){
+                let qp = 10.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C"
+            }
+            else if(six==46){
+                let qp = 10.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2);
+        document.getElementById("g6").innerHTML="C" 
+            }
+            else if(six==45){
+                let qp = 9.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C"
+            }
+            else if(six==44){
+                let qp = 9.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C"
+            }
+            else if(six==43){
+                let qp = 9.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C"
+            }
+            else if(six==42){
+                let qp = 8.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C"
+            }
+            else if(six==41){
+                let qp = 8.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C"
+            }
+            else if(six==40){
+                let qp = 8.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C"
+            }
+            else if(six==39){
+                let qp = 7.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="D"
+            }
+            else if(six==38){
+                let qp = 7.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="D"
+            }
+            else if(six==37){
+                let qp = 6.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="D"
+            }
+            else if(six==36){
+                let qp = 6.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="D"
+            }
+            else if(six==35){
+                let qp = 5.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="D"
+            }
+            else if(six==34){
+                let qp = 5.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="D"
+            }
+            else if(six==33){
+                let qp = 4.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="D"
+            }
+            else if(six==32){
+                let qp = 4.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="D"
+            }
+}
+else if(cno6==2){
+    if(six>=32){
+        let qp = 8.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="A"  
+    }
+    else if(six==31){
+        let qp = 7.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B"
+    }
+    else if(six==30){
+        let qp = 7.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B"
+    }
+    else if(six==29){
+        let qp = 7.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B"
+    }
+    else if(six==28){
+        let qp = 6.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B"
+    }
+    else if(six==27){
+        let qp = 6.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="B"
+    }
+    else if(six==26){
+        let qp = 6.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C"
+    }
+    else if(six==25){
+        let qp = 5.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C"
+    }
+    else if(six==24){
+        let qp = 5.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C"
+    }
+    else if(six==23){
+        let qp = 5.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C"
+    }
+    else if(six==22){
+        let qp = 4.67;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C"
+    }
+    else if(six==21){
+        let qp = 4.33;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C"
+    }
+    else if(six==20){
+        let qp = 4.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="C"
+    }
+    else if(six==19){
+        let qp = 3.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="D"
+    }
+    else if(six==18){
+        let qp = 3.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="D"
+    }
+    else if(six==17){
+        let qp = 2.50;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="D"
+    }
+    else if(six==16){
+        let qp = 2.00;
+        console.log(qp.toFixed(1));// "say Hello instead"
+        document.getElementById("qpbox6").value = qp.toFixed(2); 
+        document.getElementById("g6").innerHTML="D"
+    }
+
+}
+var qpbox1=parseFloat(document.getElementById("qpbox1").value);
+var qpbox2=parseFloat(document.getElementById("qpbox2").value);
+var qpbox3=parseFloat(document.getElementById("qpbox3").value);
+var qpbox4=parseFloat(document.getElementById("qpbox4").value);
+var qpbox5=parseFloat(document.getElementById("qpbox5").value);
+var qpbox6=parseFloat(document.getElementById("qpbox6").value);
+var tch = cno1+cno2+cno3+cno4+cno5+cno6;
+var tqp=qpbox1+qpbox2+qpbox3+qpbox4+qpbox5+qpbox6 ;
+var gpa= tqp/tch;
+var totalm=first_number+seco+thir+forth+fifth+six;
+console.log(qpbox1.toFixed(2));
+console.log(qpbox2.toFixed(2));
+console.log(qpbox3.toFixed(2));
+console.log(qpbox4.toFixed(2));
+console.log(qpbox5.toFixed(2));
+console.log(qpbox6.toFixed(2));
+console.log(tch)
+console.log(gpa.toFixed(2))
+document.getElementById("gpa").innerHTML=`GPA : ${gpa.toFixed(2)}`;
+document.getElementById("tch").innerHTML=tch;
+document.getElementById("mrks").innerHTML=totalm;
+
+
+
+
+
+    
+    }
+    
+    
+    
+//     var elem = document.documentElement;
+// function openFullscreen() {
+//   if (elem.requestFullscreen) {
+//     elem.requestFullscreen();
+//   } else if (elem.webkitRequestFullscreen) { /* Safari */
+//     elem.webkitRequestFullscreen();
+//   } else if (elem.msRequestFullscreen) { /* IE11 */
+//     elem.msRequestFullscreen();
+//   }
+// }
+
+// function closeFullscreen() {
+//   if (document.exitFullscreen) {
+//     document.exitFullscreen();
+//   } else if (document.webkitExitFullscreen) { /* Safari */
+//     document.webkitExitFullscreen();
+//   } else if (document.msExitFullscreen) { /* IE11 */
+//     document.msExitFullscreen();
+//   }
+// }
+ 
+    </script>
+</body>
+
+
+
+
+</html>
